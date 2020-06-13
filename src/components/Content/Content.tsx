@@ -10,8 +10,8 @@ const Content: React.FC = () => {
             <img src={developer} />
             <div className="texts">
                 <p>Hey all! I am Simi Swaminathan, Indian, living in Hamburg, Germany.</p>
-                <p>I love to build websites and apps based on HTML,CSS and Javascript.I also use React library as well as tools like NodeJS and Typescript.</p>
-                <p>Feel free to get in touch with me via below medium.</p>
+                <p>I love to build websites and apps based on HTML, CSS and Javascript. I also use React library as well as tools like NodeJS and Typescript.</p>
+                <p>Feel free to get in touch with me via below mediums.</p>
             </div>
         </div>
     )

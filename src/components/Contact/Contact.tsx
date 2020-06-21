@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
             </Card>
             <Card
                 hoverable
-                cover={<a href={'https://www.linkedin.com/in/simi-swaminathan-382172158/'} target="_blank" rel="noopener noreferrer">
+                cover={<a href={'https://www.linkedin.com/in/simi-swaminathan'} target="_blank" rel="noopener noreferrer">
                     {<LinkedinOutlined />}
                 </a>}
             >

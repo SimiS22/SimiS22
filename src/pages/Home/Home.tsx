@@ -1,5 +1,5 @@
 import React from 'react'
-import './Content.scss'
+import './Home.scss'
 import { Card } from 'antd'
 import developer from '../../assets/female-developer.svg'
 

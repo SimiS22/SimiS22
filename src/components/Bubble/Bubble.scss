@@ -6,8 +6,8 @@
     bottom: 25px;
     .bubble {
         background-color: #b2ddf1b8;
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         bottom: 85px;
         border-radius: 50%;
         z-index: 1;
@@ -16,16 +16,16 @@
         justify-content: center;
         align-items: center;
         .anticon {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 800;
             color: #374891;
         }
     }
-    #home {
-        transform: translateY(0%);
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        > span {
-            opacity: 0.7;
-        }
-    }
+    // #home {
+    //     transform: translateY(0%);
+    //     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    //     > span {
+    //         opacity: 0.7;
+    //     }
+    // }
 }

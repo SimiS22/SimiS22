@@ -1,6 +1,6 @@
 @import "../../styles/breakpoints.scss";
 
-.content {
+.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,9 +9,6 @@
     font-size: 16px;
     color: #374891;
     padding-bottom: 140px;
-    @include tablet {
-        font-size: 16px;
-    }
     .texts {
         margin-top: -1.5rem;
         display: flex;

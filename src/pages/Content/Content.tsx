@@ -4,6 +4,7 @@ import Home from '../Home/Home'
 import Contact from '../Contact/Contact'
 import Resume from '../Resume/Resume'
 import Works from '../Works/Works'
+import './Content.scss'
 
 const Content: React.FC = () => {
     const location = useLocation();
@@ -16,7 +17,7 @@ const Content: React.FC = () => {
         });
     }, [location.pathname]);
     return (
-        <div>
+        <div className='content'>
             <Switch>
                 <Route exact={true} path='/' component={Home}></Route>
                 <Route path='/resume' component={Resume}></Route>

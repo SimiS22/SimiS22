@@ -5,6 +5,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 const Navbar: React.FC = () => {
     const currentLocation = useLocation()
+
     return (
         <div className='navbarContainer'>
             <div className='navbar'>
@@ -16,9 +17,9 @@ const Navbar: React.FC = () => {
                 </div>
                 <div className="menuWrapper">
                     <div id="menu1" className={currentLocation.pathname === '/' ? 'menuElementActive' : 'menuElement'} ><Link to='/'><HomeOutlined /></Link></div>
-                    <div id="menu2" className={currentLocation.pathname === '/' ? 'menuElementActive' : 'menuElement'} ><Link to='/resume'><FilePdfOutlined /></Link></div>
-                    <div id="menu3" className={currentLocation.pathname === '/' ? 'menuElementActive' : 'menuElement'}><Link to='/works'><AppstoreOutlined /></Link></div>
-                    <div id="menu4" className={currentLocation.pathname === '/' ? 'menuElementActive' : 'menuElement'} ><Link to='/contact'><ContactsOutlined /></Link></div>
+                    <div id="menu2" className={currentLocation.pathname === '/resume' ? 'menuElementActive' : 'menuElement'} ><Link to='/resume'><FilePdfOutlined /></Link></div>
+                    <div id="menu3" className={currentLocation.pathname === '/works' ? 'menuElementActive' : 'menuElement'}><Link to='/works'><AppstoreOutlined /></Link></div>
+                    <div id="menu4" className={currentLocation.pathname === '/contact' ? 'menuElementActive' : 'menuElement'} ><Link to='/contact'><ContactsOutlined /></Link></div>
                 </div>
             </div>
             <div className="bgWrapper">

@@ -5,7 +5,7 @@ import Contact from '../Contact/Contact'
 
 import Works from '../Works/Works'
 import './Content.scss'
-import ResumePDF from '../../components/ResumePDF/ResumePDF';
+import Resume from '../Resume/Resume';
 
 const Content: React.FC = () => {
     const location = useLocation();
@@ -21,7 +21,7 @@ const Content: React.FC = () => {
         <div className='content'>
             <Switch>
                 <Route exact={true} path='/' component={Home}></Route>
-                <Route path='/resume' component={ResumePDF}></Route>
+                <Route path='/resume' component={Resume}></Route>
                 <Route path='/works' component={Works}></Route>
                 <Route path='/contact' component={Contact}></Route>
             </Switch>

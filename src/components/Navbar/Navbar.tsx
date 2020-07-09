@@ -19,9 +19,9 @@ const Navbar: React.FC = () => {
                 <div className="bgWrapper">
                     <div className='bgWrap'>
                         {
-                            ROUTES.map((element) => {
+                            ROUTES.map((element, index1) => {
                                 return (
-                                    <div className={currentLocation.pathname === element.path ? 'bgBubble active' : 'bgBubble'}></div>
+                                    <div key={index1} className={currentLocation.pathname === element.path ? 'bgBubble active' : 'bgBubble'}></div>
                                 )
                             })
                         }
@@ -29,16 +29,16 @@ const Navbar: React.FC = () => {
                     <div className="bg"></div>
                 </div>
                 <div className='bubbleWrapper'>
-                    {ROUTES.map((element) => {
+                    {ROUTES.map((element, index2) => {
                         return (
-                            <div className={currentLocation.pathname === element.path ? 'bubble active' : 'bubble'}>{element.icon}</div>
+                            <div key={index2} className={currentLocation.pathname === element.path ? 'bubble active' : 'bubble'}>{element.icon}</div>
                         )
                     })}
                 </div>
                 <div className="menuWrapper">
-                    {ROUTES.map((element) => {
+                    {ROUTES.map((element, index3) => {
                         return (
-                            <div id={element.name} className={currentLocation.pathname === element.path ? 'menuItem active' : 'menuItem'}><Link to={element.path}>{element.icon}</Link></div>
+                            <div key={index3} id={element.name} className={currentLocation.pathname === element.path ? 'menuItem active' : 'menuItem'}><Link to={element.path}>{element.icon}</Link></div>
                         )
                     })}
                 </div>

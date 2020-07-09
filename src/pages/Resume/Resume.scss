@@ -1,9 +1,42 @@
+@import "../../styles/breakpoints.scss";
+
 .resume {
+    // position: relative;
+    // z-index: -1;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // width: 100%;
+    // height: calc(100% - 235px);
+    // object {
+    //     min-height: 600px;
+    //     height: 90%;
+    //     width: 100%;
+    // }
+    display: flex;
+    margin: auto;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 160px;
+    z-index: -1;
     position: relative;
-    z-index: 1;
-    object {
-        min-height: 600px;
-        height: 90%;
+    @include tablet {
         width: 100%;
+    }
+    .PDFDocument {
+        display: flex;
+        align-items: center;
+        .PDFPage {
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+            > canvas {
+                max-width: 100%;
+                height: auto !important;
+            }
+            .react-pdf__Page__annotations {
+                display: none;
+            }
+        }
     }
 }

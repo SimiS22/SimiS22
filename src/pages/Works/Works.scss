@@ -1,0 +1,37 @@
+@import "../../styles/breakpoints.scss";
+
+.works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 160px;
+    padding: 1rem;
+    font-size: 16px;
+    width: 100%;
+    z-index: -1;
+    .workData {
+        margin: 30px;
+        .ant-card {
+            box-shadow: rgba(130, 130, 130, 0.1) 0px 50px 60px 0px, rgba(0, 0, 0, 0.09) 0px 2px 10px 0px;
+            cursor: auto;
+            .ant-card-cover {
+                overflow: hidden;
+            }
+            .text {
+                .ant-card-meta-title {
+                    text-align: center;
+                    font-weight: 800;
+                    font-size: 14px;
+                    color: #374891;
+                }
+                .ant-card-meta-description {
+                    text-align: center;
+                    font-size: 12px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

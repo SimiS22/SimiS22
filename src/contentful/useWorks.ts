@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { CONTENTFUL_CLIENT } from './index';
-import { Asset } from 'contentful';
 
 interface WorksStore {
     loading: boolean;

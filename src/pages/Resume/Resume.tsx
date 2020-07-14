@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import pdf from './simi-resume.pdf';
 import './Resume.scss'
 import { Document, Page } from 'react-pdf';
-import { CalculatorFilled } from '@ant-design/icons';
 
 const Resume: React.FC = () => {
     return (

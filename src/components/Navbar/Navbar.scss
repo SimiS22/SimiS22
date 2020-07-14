@@ -67,6 +67,7 @@ $bgcolor: #b2ddf1;
         width: 100%;
         display: flex;
         justify-content: space-around;
+        transform: translateY(-5px);
         .menuItem {
             transform: translateY(100%);
             font-weight: 800;
@@ -94,25 +95,26 @@ $bgcolor: #b2ddf1;
 .bgWrapper {
     filter: url(#goo);
     width: 100%;
-    height: 100px;
+    height: 40px;
     position: absolute;
     bottom: 60px;
+    transform: translateY(10px);
     .bgWrap {
         display: flex;
         justify-content: space-around;
         position: absolute;
         width: 100%;
-
         .bgBubble {
             width: 70px;
-            height: 70px;
+            height: 0px;
             border-radius: 50%;
             background-color: white;
             opacity: 1;
             margin-top: 0;
             transition: all 0.5s ease-in-out;
             &.active {
-                margin-top: 85px;
+                margin-top: 15px;
+                height: 70px;
             }
         }
     }

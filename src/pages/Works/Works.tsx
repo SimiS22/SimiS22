@@ -3,6 +3,7 @@ import { Card } from 'antd';
 import Spinner from '../../components/Spinner/Spinner'
 import { useWorks } from '../../contentful/useWorks'
 import './Works.scss'
+import { Divider } from 'antd';
 
 const { Meta } = Card;
 const Works: React.FC = () => {
@@ -13,23 +14,26 @@ const Works: React.FC = () => {
     const worksDataArray = worksData.works;
 
     return (
-        <div className='works'>{
-            worksDataArray.map((workItem, index) => {
-                return (
-                    <div key={index} className='workData'>
-                        <Card
-                            cover={<img alt={workItem.name} src={workItem.image} style={{ width: 320, objectFit: 'cover' }} />}>
-                            <Meta className="text" title={workItem.name} description={
-                                <a href={workItem.url} target="_blank" rel="noopener noreferrer">
-                                    {workItem.url}
-                                </a>
-                            } />
-                        </Card>
-                    </div>
-                )
-            })
-        }
-        </div>
+        <>
+            <Divider className='heading'>My Works</Divider>
+            <div className='works'>{
+                worksDataArray.map((workItem, index) => {
+                    return (
+                        <div key={index} className='workData'>
+                            <Card
+                                cover={<img alt={workItem.name} src={workItem.image} style={{ width: 320, objectFit: 'cover' }} />}>
+                                <Meta className="text" title={workItem.name} description={
+                                    <a href={workItem.url} target="_blank" rel="noopener noreferrer">
+                                        {workItem.url}
+                                    </a>
+                                } />
+                            </Card>
+                        </div>
+                    )
+                })
+            }
+            </div>
+        </>
     )
 
 

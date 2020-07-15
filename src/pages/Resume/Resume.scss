@@ -45,6 +45,9 @@
     .ant-divider-inner-text {
         color: #374891;
         font-weight: 800;
-        font-size: 18px;
+        font-size: 14px;
+        @include tablet {
+            font-size: 18px;
+        }
     }
 }

@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
                 <div className="menuWrapper">
                     {ROUTES.map((element, index3) => {
                         return (
-                            <Tooltip title={element.name} ><span><div key={index3} id={element.name} className={currentLocation.pathname === element.path ? 'menuItem active' : 'menuItem'}><Link to={element.path}>{element.icon}</Link></div></span></Tooltip>
+                            <Tooltip title={element.name}><span><div key={index3} id={element.name} className={currentLocation.pathname === element.path ? 'menuItem active' : 'menuItem'}><Link to={element.path}>{element.icon}</Link></div></span></Tooltip>
                         )
                     })}
                 </div>

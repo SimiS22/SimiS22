@@ -85,7 +85,7 @@ $bgcolor: #b2ddf1;
     }
     svg {
         color: #374891;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bolder;
         @include tablet {
             font-size: 22px;
@@ -94,10 +94,17 @@ $bgcolor: #b2ddf1;
 }
 .ant-tooltip {
     color: #b2ddf1;
+    display: none;
+    @include tablet {
+        display: block;
+    }
     .ant-tooltip-inner {
         background-color: #b2ddf1;
         color: #374891;
     }
+}
+.ant-tooltip-hidden {
+    display: none !important;
 }
 .bgWrapper {
     filter: url(#goo);

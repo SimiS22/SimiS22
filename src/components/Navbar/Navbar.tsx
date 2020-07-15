@@ -2,12 +2,13 @@ import React from 'react'
 import './Navbar.scss'
 import { HomeOutlined, FilePdfOutlined, AppstoreOutlined, ContactsOutlined } from '@ant-design/icons'
 import { Link, useLocation } from 'react-router-dom'
+import { Tooltip } from 'antd'
 
 const ROUTES = [
-    { path: '/', name: 'home', icon: <HomeOutlined /> },
-    { path: '/resume', name: 'resume', icon: <FilePdfOutlined /> },
-    { path: '/works', name: 'works', icon: <AppstoreOutlined /> },
-    { path: '/contact', name: 'contact', icon: <ContactsOutlined /> }
+    { path: '/', name: 'Home', icon: <HomeOutlined /> },
+    { path: '/resume', name: 'Resume', icon: <FilePdfOutlined /> },
+    { path: '/works', name: 'Works', icon: <AppstoreOutlined /> },
+    { path: '/contact', name: 'Contact', icon: <ContactsOutlined /> }
 ]
 const Navbar: React.FC = () => {
 
@@ -38,7 +39,7 @@ const Navbar: React.FC = () => {
                 <div className="menuWrapper">
                     {ROUTES.map((element, index3) => {
                         return (
-                            <div key={index3} id={element.name} className={currentLocation.pathname === element.path ? 'menuItem active' : 'menuItem'}><Link to={element.path}>{element.icon}</Link></div>
+                            <Tooltip title={element.name} ><span><div key={index3} id={element.name} className={currentLocation.pathname === element.path ? 'menuItem active' : 'menuItem'}><Link to={element.path}>{element.icon}</Link></div></span></Tooltip>
                         )
                     })}
                 </div>

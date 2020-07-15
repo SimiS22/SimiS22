@@ -2,11 +2,12 @@ import React from 'react'
 import { Card } from 'antd';
 import { LinkedinOutlined, GithubOutlined, MailOutlined } from '@ant-design/icons'
 import './Contact.scss'
-
+import message from '../../assets/message.svg'
 
 const Contact: React.FC = () => {
     return (
         <div className='contact'>
+            <img src={message} alt='' />
             <div className='contactText'>
                 <p>Feel free to get in touch with me via below mediums.</p>
             </div>

@@ -1,6 +1,7 @@
 @import "../../styles/breakpoints.scss";
 
 .works {
+    @include animateEnter();
     display: flex;
     justify-content: center;
     align-items: center;

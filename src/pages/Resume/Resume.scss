@@ -13,6 +13,7 @@
     //     height: 90%;
     //     width: 100%;
     // }
+    @include animateEnter();
     display: flex;
     margin: auto;
     width: 80%;

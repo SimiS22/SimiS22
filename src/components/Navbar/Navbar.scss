@@ -1,21 +1,6 @@
 @import "../../styles/breakpoints.scss";
 
 $bgcolor: #b2ddf1;
-
-// .navbarContainer {
-//     width: 100%;
-//     min-width: 400px;
-//     height: 70vh;
-//     display: flex;
-//     justify-content: flex-end;
-//     flex-direction: column;
-//     overflow: hidden;
-//     position: fixed;
-//     bottom: 0;
-//     @include tablet {
-//         width: 60%;
-//     }
-// }
 .navbar {
     width: 100%;
     height: 75px;
@@ -31,8 +16,12 @@ $bgcolor: #b2ddf1;
         bottom: 25px;
         .bubble {
             background-color: $bgcolor;
-            width: 60px;
-            height: 60px;
+            height: 50px;
+            width: 50px;
+            @include tablet {
+                width: 60px;
+                height: 60px;
+            }
             bottom: 100px;
             border-radius: 50%;
             z-index: 1;

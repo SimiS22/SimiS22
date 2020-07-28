@@ -15,7 +15,7 @@ const Works: React.FC = () => {
 
     return (
         <>
-            <Divider className='heading'>My Works</Divider>
+            <Divider className='heading'>Some of my recent works</Divider>
             <div className='works'>{
                 worksDataArray.map((workItem, index) => {
                     return (

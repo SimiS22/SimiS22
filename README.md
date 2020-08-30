@@ -1,3 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi there 👋,
 
-## https://simi-swaminathan.web.app
+I'm Simi Swaminathan. Find out more about me here :) https://simi-swaminathan.web.app

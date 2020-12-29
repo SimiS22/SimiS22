@@ -1,5 +1,5 @@
 import React from 'react'
-import pdf from './simi-resume.pdf';
+import pdf from './resume.pdf';
 import './Resume.scss'
 import { Document, Page } from 'react-pdf';
 import { Divider } from 'antd'
